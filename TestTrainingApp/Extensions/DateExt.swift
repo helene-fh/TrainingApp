@@ -19,7 +19,7 @@ extension Date{
         var formattedDate = Date()
         var dateString = String()
         let dateStringFormatter = DateFormatter()
-        dateStringFormatter.timeZone = TimeZone.current
+        dateStringFormatter.timeZone = TimeZone(identifier: "UTC")
         
         if isTime == true{
             dateStringFormatter.dateFormat = "HH:mm"
