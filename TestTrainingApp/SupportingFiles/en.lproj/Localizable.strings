@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TestTrainingApp
+
+  Created by Helene Fogde Hejda on 2023-07-16.
+  
+*/
+
+"places_remaining" = "Places remaining";
+"upcoming_sessions" = "Upcoming sessions";
+"today_label" = "Today";
+"tomorrow_label" = "Tomorrow";

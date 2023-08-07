@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2D980A07-E320-40C4-B233-689C3D3734A0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE39BD28-FDE5-4358-958F-164359934CA9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestTrainingApp/ViewControllers/ClubViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "tableView(_:heightForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C5D4F21-E2BF-4BC4-A1D4-9B47A7045069"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestTrainingApp/ViewControllers/ClubsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1105F2EA-2C40-4BA9-8D71-EF8A2EFDDDC7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestTrainingApp/TableView/ClubCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "handleClubPressed()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB66A15B-F6DE-4CA0-850B-AD41902161B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestTrainingApp/TableView/ClubCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ClubCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "EB66A15B-F6DE-4CA0-850B-AD41902161B6 - 4a0235b44ab26f22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in variable initialization expression of TestTrainingApp.ClubCell.listClubWorkouts : () -&gt; ()"
+                  moduleName = "TestTrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/helenefh/Desktop/TestTrainingApp/TestTrainingApp/TestTrainingApp/TableView/ClubCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "EB66A15B-F6DE-4CA0-850B-AD41902161B6 - df017f1f57021c68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestTrainingApp.ClubCell.listClubWorkouts.getter : () -&gt; ()"
+                  moduleName = "TestTrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/helenefh/Desktop/TestTrainingApp/TestTrainingApp/TestTrainingApp/TableView/ClubCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "103">
+               </Location>
+               <Location
+                  uuid = "EB66A15B-F6DE-4CA0-850B-AD41902161B6 - ce10ead9f1635c74"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestTrainingApp.ClubCell.listClubWorkouts.setter : () -&gt; ()"
+                  moduleName = "TestTrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/helenefh/Desktop/TestTrainingApp/TestTrainingApp/TestTrainingApp/TableView/ClubCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "EB66A15B-F6DE-4CA0-850B-AD41902161B6 - 3f558d60726d3dca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestTrainingApp.ClubCell.listClubWorkouts.modify : () -&gt; ()"
+                  moduleName = "TestTrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/helenefh/Desktop/TestTrainingApp/TestTrainingApp/TestTrainingApp/TableView/ClubCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "EB66A15B-F6DE-4CA0-850B-AD41902161B6 - e6988320174ed474"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestTrainingApp.ClubCell.listClubWorkouts.modify : () -&gt; () with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TestTrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/helenefh/Desktop/TestTrainingApp/TestTrainingApp/TestTrainingApp/TableView/ClubCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "EB66A15B-F6DE-4CA0-850B-AD41902161B6 - 2a39e8df6ce39718"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestTrainingApp.ClubCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; TestTrainingApp.ClubCell"
+                  moduleName = "TestTrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/helenefh/Desktop/TestTrainingApp/TestTrainingApp/TestTrainingApp/TableView/ClubCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "EB66A15B-F6DE-4CA0-850B-AD41902161B6 - 49ab8793113ada1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestTrainingApp.ClubCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TestTrainingApp.ClubCell&gt;"
+                  moduleName = "TestTrainingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/helenefh/Desktop/TestTrainingApp/TestTrainingApp/TestTrainingApp/TableView/ClubCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "111">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD771D30-417C-466B-979C-9B15426BA9E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestTrainingApp/Managers/DataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchWorkouts(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B91C3D98-6ADA-428F-BAD6-D444F096FDCB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestTrainingApp/Managers/DataManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchWorkouts(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84C925A3-EADE-44BA-A1B7-87B81F24224E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestTrainingApp/ViewModels/WorkoutsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "addWorkout(listItems:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FDE89F7-79CA-4F89-8407-574850A022FF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestTrainingApp/Extensions/DateExt.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "convertTimestamp(timeStamp:isTime:isDate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
