@@ -1,2 +1,2 @@
-# TrainingApp
-## Small training app that uses STC's api  
+## TrainingApp
+Small training app that uses STC's api  
