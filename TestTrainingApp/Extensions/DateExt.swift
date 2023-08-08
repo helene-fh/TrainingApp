@@ -38,8 +38,8 @@ extension Date{
                     dateString = Localize.today_label.string
                 } else if calendar.isDateInTomorrow(formattedDate) {
                     dateString = Localize.tomorrow_label.string
-                }else {
-                    dateStringFormatter.dateFormat = "MMMM d"
+                } else {
+                    dateStringFormatter.dateFormat = "EEEE"
                     dateString = dateStringFormatter.string(from: formattedDate)
                 }
             }
