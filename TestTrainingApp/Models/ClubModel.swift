@@ -11,12 +11,6 @@ struct ClubResponse: Decodable {
     var id: Int
     var name: String
     var address: AddressModel
-
-    enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case name = "name"
-        case address = "address"
-    }
 }
 
 struct ClubModel: Decodable, Identifiable {

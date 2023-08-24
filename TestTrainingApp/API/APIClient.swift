@@ -16,14 +16,26 @@ class ApiClient {
     private init(){
     }
     
-    func fetchFromAPI<T: Decodable>(id: Int? = nil, endPoint: Endpoints, type: T.Type) ->
-    
-    Future<[T], Error> {
+    func fetchFromAPI<T: Decodable>(id: Int? = nil, endPoint: Endpoints? = nil, type: T.Type) -> Future<[T], Error> {
+        
         return Future<[T], Error> { [weak self] promise in
-            guard let self = self, let url = URL(string: self.baseURL.appending(id == nil ? "" : "/\(id ?? 0)").appending(endPoint.endPoint)) else {
-           
+            guard let self = self else {
+                return promise(.failure(NetworkError.unknown))
+            }
+            
+            var urlString = self.baseURL
+            if let id = id {
+                urlString += "/\(id)"
+            }
+            
+            if let endPoint = endPoint {
+                urlString += endPoint.endPoint
+            }
+            
+            guard let url = URL(string: urlString) else {
                 return promise(.failure(NetworkError.invalidURL))
             }
+            
             print("URL PRINT -> \(url)")
             URLSession.shared.dataTaskPublisher(for: url)
                 .tryMap { (data, response) -> Data in
@@ -33,7 +45,7 @@ class ApiClient {
                     return data
                 }
                 .decode(type: [T].self, decoder: JSONDecoder())
-                .receive(on: RunLoop.main)
+                .receive(on: DispatchQueue.main)
                 .sink(receiveCompletion: { (completion) in
                     if case let .failure(error) = completion {
                         switch error {

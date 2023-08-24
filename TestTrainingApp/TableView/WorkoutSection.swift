@@ -9,7 +9,7 @@ import UIKit
 
 class WorkoutSection: UITableViewHeaderFooterView {
 
-    static let identifier = Constants.UserDefault.TABLEVIEWCELL_WORKOUT_SECTION_IDENTIFIER
+    static let identifier = Constants.Identifiers.TABLEVIEWCELL_WORKOUT_SECTION_IDENTIFIER
     
     let dateLabel: UILabel = {
         let label = UILabel()

@@ -9,7 +9,7 @@ import Foundation
 
 extension Date{
     
-    func convertTimestamp(timeStamp: String, isTime: Bool? = false, isDate: Bool? = false) -> String{
+    func convertTimestamp(timeStamp: String, isTime: Bool? = false, isDay: Bool? = false) -> String{
       
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "sv_SE")
@@ -29,7 +29,7 @@ extension Date{
                }
         }
         
-        if isDate == true{
+        if isDay == true{
             
             if let date = dateFormatter.date(from: timeStamp){
                 formattedDate = date

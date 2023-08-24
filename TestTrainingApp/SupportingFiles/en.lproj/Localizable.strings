@@ -10,3 +10,7 @@
 "upcoming_sessions" = "Upcoming sessions";
 "today_label" = "Today";
 "tomorrow_label" = "Tomorrow";
+
+"error_invalidURL" = "Invalid URL";
+"error_responseError" = "Unexpected status code";
+"error_unknown" = "Unknown error";

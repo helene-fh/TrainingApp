@@ -17,11 +17,11 @@ extension NetworkError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidURL:
-            return NSLocalizedString("Invalid URL", comment: "Invalid URL")
+            return Localize.invalidURL.string
         case .responseError:
-            return NSLocalizedString("Unexpected status code", comment: "Invalid response")
+            return Localize.responseError.string
         case .unknown:
-            return NSLocalizedString("Unknown error", comment: "Unknown error")
+            return Localize.unknown.string
         }
     }
 }

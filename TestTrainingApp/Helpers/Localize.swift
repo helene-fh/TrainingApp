@@ -12,6 +12,11 @@ enum Localize: String {
     case upcoming_sessions
     case today_label
     case tomorrow_label
+    
+    //Errors
+    case invalidURL
+    case responseError
+    case unknown
 }
 
 extension Localize {

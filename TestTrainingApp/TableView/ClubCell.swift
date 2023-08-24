@@ -9,7 +9,7 @@ import UIKit
 
 class ClubCell: UITableViewCell {
     
-    static let identifier = Constants.UserDefault.TABLEVIEWCELL_CLUB_CELL_IDENTIFIER
+    static let identifier = Constants.Identifiers.TABLEVIEWCELL_CLUB_CELL_IDENTIFIER
     var listClubWorkouts : () -> () = {}
     
     private let card: UIView = {

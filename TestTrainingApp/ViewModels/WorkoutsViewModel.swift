@@ -10,7 +10,7 @@ import Combine
 
 class WorkoutsViewModel: NSObject {
     
-    var dataManager : DataManager
+    var dataManager = DataManager()
     private let cancellables: [AnyCancellable] = []
     
     var workoutItems : [WorkoutModel] = []
@@ -20,9 +20,6 @@ class WorkoutsViewModel: NSObject {
     init(dataManager: DataManager){
         self.dataManager = dataManager
         super.init()
-        var array : [ListItem] = []
-        array = addWorkout(listItems: array)
-        listItems = array
     }
     
     func addWorkout(listItems: [ListItem]) -> [ListItem]{
@@ -54,7 +51,7 @@ class WorkoutsViewModel: NSObject {
     
     private func formatDateFromTimestamp(_ timestamp: String) -> String {
         let date = Date()
-        return date.convertTimestamp(timeStamp: timestamp, isTime: false, isDate: true)
+        return date.convertTimestamp(timeStamp: timestamp, isTime: false, isDay: true)
     }
 }
 

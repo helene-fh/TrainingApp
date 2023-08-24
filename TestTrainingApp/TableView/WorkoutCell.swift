@@ -9,7 +9,7 @@ import UIKit
 
 class WorkoutCell: UITableViewCell {
     
-    static let identifier = Constants.UserDefault.TABLEVIEWCELL_WORKOUT_CELL_IDENTIFIER
+    static let identifier = Constants.Identifiers.TABLEVIEWCELL_WORKOUT_CELL_IDENTIFIER
     
     private let card: UIView = {
         let view = UIView()

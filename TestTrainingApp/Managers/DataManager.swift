@@ -20,7 +20,7 @@ class DataManager: ObservableObject {
     }
     
     func fetchClubs(){
-        ApiClient.shared.fetchFromAPI(endPoint: .clubs, type: ClubResponse.self)
+        ApiClient.shared.fetchFromAPI(type: ClubResponse.self)
             .sink { completion in
                 switch completion {
                 case .failure(let err):
@@ -29,7 +29,9 @@ class DataManager: ObservableObject {
                     print("Finished fetching Clubs")
                 }
             } receiveValue: { [weak self] clubResponse in
-                self?.clubs = clubResponse.map { ClubModel(id: $0.id, name: $0.name, address: $0.address) }
+                DispatchQueue.main.async {
+                    self?.clubs = clubResponse.map { ClubModel(id: $0.id, name: self?.trimWorkoutLabel(clubName: ($0.name)) ?? "", address: $0.address) }
+                }
             }
             .store(in: &cancellables)
     }
@@ -44,7 +46,9 @@ class DataManager: ObservableObject {
                     print("Finished fetching Workouts")
                 }
             } receiveValue: { [weak self] workoutResponse in
-                self?.workouts = workoutResponse.map { WorkoutModel(id: $0.id, name: $0.name, duration: $0.duration, slots: $0.slots) }
+                DispatchQueue.main.async {
+                    self?.workouts = workoutResponse.map { WorkoutModel(id: $0.id, name: $0.name, duration: $0.duration, slots: $0.slots) }
+                }
             }
             .store(in: &cancellables)
     }

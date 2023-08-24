@@ -12,14 +12,12 @@ class WorkoutsViewController: BaseViewController {
     
     var clubModel : ClubModel?
     var adressModel : AddressModel?
-    private let dataManager : DataManager
-    lazy private var viewModel = WorkoutsViewModel(dataManager: dataManager)
-    lazy var trimmedTitle = dataManager.trimWorkoutLabel(clubName: clubModel!.name)
+    private var viewModel : WorkoutsViewModel
     
     private lazy var titleLabel: UILabel = {
         var label = UILabel()
         label.applyFont(font: .h1, color: .whiteColor)
-        label.text = trimmedTitle
+        label.text = clubModel?.name
         return label
     }()
 
@@ -64,8 +62,8 @@ class WorkoutsViewController: BaseViewController {
        return view
    }()
 
-    init(dataManager: DataManager, club: ClubModel){
-        self.dataManager = dataManager
+    init(viewModel: WorkoutsViewModel, club: ClubModel){
+        self.viewModel = viewModel
         self.clubModel = club
         super.init(nibName: nil, bundle: nil)
     }
@@ -76,14 +74,14 @@ class WorkoutsViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataManager.fetchWorkouts(id: clubModel!.id)
+        viewModel.dataManager.fetchWorkouts(id: clubModel!.id)
         updateHeader()
         setUpConstraints()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        bindValues()
+        updateValues()
     }
     
     private func updateHeader(){
@@ -97,7 +95,7 @@ class WorkoutsViewController: BaseViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     
-    private func bindValues(){
+    private func updateValues(){
         viewModel.dataManager.$workouts.receive(on: DispatchQueue.main).sink(receiveValue: { [weak self] value in
             self?.viewModel.workoutItems = value
             print(self?.viewModel.workoutItems as Any)
@@ -138,6 +136,5 @@ extension WorkoutsViewController: UITableViewDelegate {
         
         return view
     }
-    
 }
 

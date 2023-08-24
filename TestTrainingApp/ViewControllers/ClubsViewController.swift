@@ -11,10 +11,8 @@ import Combine
 class ClubsViewController: BaseViewController {
     
     private let viewModel : ClubsViewModel
-    private let dataManager : DataManager
     
-    init(dataManager: DataManager, viewModel: ClubsViewModel){
-        self.dataManager = dataManager
+    init(viewModel: ClubsViewModel){
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -44,10 +42,10 @@ class ClubsViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        bindValues()
+        updateValues()
     }
     
-    private func bindValues(){
+    private func updateValues(){
         viewModel.dataManager.$clubs.receive(on: DispatchQueue.main).sink(receiveValue: { [weak self] value in
             self?.viewModel.clubItems = value
             print(self?.viewModel.clubItems as Any)
@@ -72,15 +70,19 @@ extension ClubsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return .tableViewRowHeight
     }
-    
 }
 
 extension ClubsViewController: ClubsDelegate {
     func presentViewController(indexPath: IndexPath){
         let club = viewModel.clubItems[indexPath.row]
-        let workoutViewController = WorkoutsViewController(dataManager: dataManager, club: club)
-        workoutViewController.navigationItem.setHidesBackButton(true, animated: false)
-        navigationController?.pushViewController(workoutViewController, animated: true)
+     
+        DispatchQueue.main.async {
+            let dataManager = DataManager()
+            let workoutViewModel = WorkoutsViewModel(dataManager: dataManager)
+            let workoutViewController = WorkoutsViewController(viewModel: workoutViewModel, club: club)
+            workoutViewController.navigationItem.setHidesBackButton(true, animated: false)
+            self.navigationController?.pushViewController(workoutViewController, animated: true)
+        }
     }
 }
 
